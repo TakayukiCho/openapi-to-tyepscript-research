@@ -1,0 +1,8 @@
+{
+  "name": "openapi-to-tyepscript-research",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:TakayukiCho/openapi-to-tyepscript-research.git",
+  "author": "Takayuki Cho <taka.3365@gmail.com>",
+  "license": "MIT"
+}
