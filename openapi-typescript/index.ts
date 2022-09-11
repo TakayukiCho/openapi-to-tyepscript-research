@@ -1,15 +1,27 @@
-import { paths } from "./schema";
+import { paths, components } from "./schema";
 
-import { Fetcher } from "openapi-typescript-fetch";
+import { Fetcher, Middleware } from "openapi-typescript-fetch";
 
 // declare fetcher for paths
 const fetcher = Fetcher.for<paths>()
 
-// global configuration
 fetcher.configure({
   baseUrl: "https://petstore.swagger.io/v2",
   init: {
-    headers: {},
+    headers: {
+      hoge: 'fuga'
+    },
+  },
+  use: [] // middlewares
+})
+
+const fetcherWithAuthToken =  Fetcher.for<paths>()
+fetcherWithAuthToken.configure({
+  baseUrl: "https://petstore.swagger.io/v2",
+  init: {
+    headers: {
+      Authorization: 'bearer wfaweoiwawiopfjewaiofjewoiafjeiowafjiof'
+    },
   },
   use: [] // middlewares
 })
