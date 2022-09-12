@@ -19,5 +19,12 @@ import type { Pet } from './sample/@types'
 
   })
   const pet = await client.pet._petId(100).$get()
+
+  client.pet._petId(2).$delete({
+    headers: {
+      api_key: 'bearer SOME TOKEN'
+    }
+  })
+
   console.log(pet)
 })()
