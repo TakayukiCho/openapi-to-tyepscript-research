@@ -12,8 +12,8 @@ https://github.com/drwpow/openapi-typescript
 
 * 一番スター数が多い
 * レスポンス含めてすべて型管理してくれる
-* axiosをかませることができないので柔軟性が低いかも。具体的にはリクエストごとにHEADERをかえるとかができず、グローバルコンフィグで変えるしかできない。
-* なぜかheaderの型が聞かない
+* axiosをかませることができないので柔軟性が低いかも。
+* なぜかheaderの型が効かない(/pet/${petID}のDELETE参照)
 
 ## openapi-typescript-codegen
 
@@ -26,7 +26,6 @@ https://github.com/ferdikoomen/openapi-typescript-codegen
 ### ポイント
 
 * スター数はそこそこ
-* axiosをラッパーに噛ませれるため柔軟性が高い
 * headerの型が聞く
 
 

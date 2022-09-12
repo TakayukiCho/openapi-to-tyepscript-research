@@ -1219,6 +1219,11 @@
         "type": "apiKey",
         "name": "api_key",
         "in": "header"
+      },
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
       }
     }
   }
